@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="style/design.css">
+    <title>ID FreeMov</title>
+    <style></style>
+</head>
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top" >
+    <div class="w3-bar w3-row nav-container" id="myNavbar" >
+      <a href="#" class="w3-bar-item w3-col l4 m4 s6 w3-wide"><img src="assets/logo2.png" alt="not_supported" class="logo"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-hide-small w3-col l8 m8 s6" style="padding: 0.5vw;">
+        <a href="#" class="w3-bar-item bar_items">Home</a>
+        <a href="#workplace" class="w3-bar-item bar_items">Workplace</a>
+        <a href="#contactus" class="w3-bar-item bar_items">Contact Us</a>
+        <a href="#" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item bar_items">Demo</a>
+        <a href="#" class="w3-bar-item w3-right" style="margin-right: 3rem;"> <button class="bar_items2" onclick="document.getElementById('id01').style.display='block'">Try Now</button></a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium mobile_bars" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="#workplace" onclick="w3_close()" class="w3-bar-item w3-button">Workplace</a>
+    <a href="#cotactus" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+    <a href="#" onclick="side_bar_button()" class="w3-bar-item w3-button">Request Demo</a>
+    <a href="#" onclick="side_bar_button()" class="w3-bar-item w3-button">Try Now</a>
+  </nav>
+
+  <header class="w3-display-container w3-row for_padding bkg1" id="index">
+    <div class="w3-half" style="padding-left: 20px;padding-top: 190px;">
+      <h6 class="hh1">SaaS Application</h6>
+      <h1 class="hh2">Manage SaaS applications without passwords</h1>
+      <h4 class="hh3">Access any corporate application with biometrics, simply and securely</h4>
+      <a href="#" style="cursor: pointer;"><button class="btn1" onclick="document.getElementById('id01').style.display='block'">Try Now</button></a>
+    </div>
+    <div class="w3-half bkg2">
+        <img src="assets/heder1.png" alt="not_supported" class="header2_img">
+    </div>
+  </header>
+  <!--popup-->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+          <form action="#" class="login_popup">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright cros_btn">&times;</span>
+              <h1 class="w3-center fo1">Request Demo</h1>
+              <h5 class="fo2">Drop Your Email and We Will Contact You Within 24hours</h5>
+              <input type="email" placeholder="Email" /required>
+              <input type="submit" placeholder="Send">
+          </form>
+    </div>
+  </div>
+
+
+  <!--What is ID FreeMov-->
+  <div class="w3-container padding_for_elements what_block" style="background-color: #f3fefa;">
+    <h5 class="hh4">WHAT IS ID FreeMov</h5>
+    <h1 class="hh5">ID FreeMov is a fully <span>integrated platform </span> of app management products</h1>
+    <h6 class="hh6">We bring together everything that you need to manage an ever growing set of SaaS<br> applications.</h6>
+    <div class="w3-row Id_free_move" id="freemov" style="display: block;margin-left: auto;margin-right: auto;padding: 30px 0px;text-align:center;">
+      <div class="w3-col l3 m4 s12 " style="padding:40px 8px;margin-right:1%;">
+        <i class="fas fa-unlock-alt"></i>
+        <h4 class="hh7">Passwordless Single Sign-on</h4>
+        <h6 class="hh8">One-click access to SaaS application from any platform using biometric.</h6>
+      </div>
+      <div class="w3-col l3 m3 s12 " style="padding:40px 8px;margin-right: 1%;">
+        <i class="fas fa-key"></i>
+        <h4 class="hh7">Next Gen. Password Manager</h4>
+        <h6 class="hh8">Log in to sites and fill forms securely with biometrics..</h6>
+      </div>
+      <div class="w3-col l3 m3 s12 " style="padding:40px 8px;">
+        <i class="fas fa-user-shield"></i>
+        <h4 class="hh7">Application Visibility and Control</h4>
+        <h6 class="hh8">Application spend, usage, and licensing visibility in one place.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--How we eliminate-->
+  <div class="w3-display-container" id="workplace">
+    <div class="padding_for_elements" >
+      <h6 class="hh4">HOW WE ELIMINATE PASSWORDS</h6>
+      <h1 class="hh5">Set your workplace <span>free from passwords</span></h1>
+      <h4 class="hh9">Id FreeMov helps you eliminate passwords end to end. No more password resets, compromised credentials, or cumbersome MFA codes. Your employees will simply use biometrics on any device they have.</h4>
+    </div>
+    
+    <div class="w3-display-container w3-row">
+      <div class="w3-half w3-row">
+        <div class="w3-col l6 m6 s12 eliminate_div" style="background-color: #32de84;">
+          <h4>Mobile device as biometric key</h4>
+          <h6>Employee turns device into digital identity. Accessing applications is as simple as approving a biometric scan.</h6>
+        </div>
+        <div class="w3-col l6 m6 s12 eliminate_div" style="background-color: #4FFFB0;">
+          <h4>Onboarding with a mobile app</h4>
+          <h6>No more printing or sending passwords over email.Employees remotely self-onboard with a app.</h6>
+        </div>
+        <div class="w3-col l6 m6 s12 eliminate_div " style="background-color: #00A693;">
+          <h4 class="hh10">Biometrics everywhere</h4>
+          <h6>Employees can seamlessly switch and use any device with local biometric sensor to access resources.</h6>
+        </div>
+        <div class="w3-col l6 m6 s12 eliminate_div" style="background-color:#90EE90;">
+          <h4>Onboarding with a mobile app</h4>
+          <h6>No more printing or sending passwords over email.Employees remotely self-onboard with a app.</h6>
+        </div>
+    </div>
+
+      <div class="w3-half" style="overflow: hidden;">
+        <img src="assets/bkg.jpg" alt="not_supported" class="Cards_left" >
+      </div>
+    </div>
+  </div>
+
+  <!--delicate-->
+  <div class="w3-container" style="padding: 120px 20px;">
+    <div class="delicate" >
+      <h1 class="w3-center hh11">Ditch passwords,<span> delight your<br> employees</span></h1>
+      <a href="#" style="cursor: pointer;display: flex;justify-content: center;text-decoration: none;font-size: 15px;"><button class="btn2" onclick="document.getElementById('id01').style.display='block'">Request Demo</button></a>
+    </div>
+  </div>
+  <!--Contact us-->
+  <div class="w3-diaplay-container w3-row" style="overflow: hidden;" id="contactus">
+    <div class="w3-col l4 m4 s12" style="padding: 53px 40px;background-color: #48e8a8;">
+      <h4 class="hh12">Let's Get In Touch</h4>
+      <h6 style="color: white;">We're open for any suggestion or just to have a chat</h6>
+      <h5 class="hh13"><i class="fas fa-map-marker-alt"></i>Address:<span>  198 west 121th street, <font style="margin-left: 35px;">chandigarh punjab</font> </span> </h5>
+      <a href="tel:+919265173789" style="text-decoration: none;"><h5 class="hh13"><i class="fas fa-phone-alt"></i>Phone:<span>  +919265173789</span> </h5></a>
+      <a href="mailto:info@idFreemov.com" style="text-decoration: none;"><h5 class="hh13"><i class="far fa-envelope"></i>Mail:<span>  info@idFreemov.com</span> </h5></a>
+    </div>
+    <div class="w3-col l8 m8 s12 hh13" style="background-color: #f3fefa;padding: 50px 20px;">
+      <h4 class="w3-center hh12" style="color:black">Get in touch</h4>
+      <div class="delicate_form"  id="contact_form">
+        <table>
+          <form action="#">
+            <tr>
+              <td><input type="text" name="Name" placeholder="Name"></td>
+            </tr>
+            <tr>
+              <td><input type="email" name="Email" placeholder="Email"></td>
+            </tr>
+            <tr>
+              <td><textarea name="message" cols="46" rows="7" placeholder="Message"></textarea></td>
+            </tr>
+            <tr>
+              <td><input type="submit" placeholder="Send"></td>
+            </tr>
+          </form>
+        </table>
+      </div>
+    </div>
+  </div>
+<footer class="w3-container" style="padding: 150px 30px 30px 30px;background-color: #f3fefa;"> 
+  <div style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+    <div class="w3-row">
+      <div class="w3-col l2 m3 s12">
+        <h3 class="companyname" style="color: orange;font-weight: 900;">ID FreeMov</h3>
+      </div>
+      <div class="w3-col l10 m9 s12" id="foot">
+        <div class="w3-right"> 
+          <a href="#index" >Home</a>
+          <a href="#workplace">Workplace</a>
+          <a href="#contactus">Contact us</a>
+          <a href="legal.html">Legal Notice</a>
+        </div>
+      </div>
+    </div>
+    <hr size="8px">
+    <div class="w3-row">
+      <div class="w3-col l4 m4 s12">
+        <h6 class="ff1">Copyright© 2020 <a href="" style="text-decoration: none;color:white;">Id FreeMov.</a></h6>
+      </div>
+      <div class="w3-col l8 m8 s8" id="foot_2">
+        <div class="w3-right"> 
+          <a href="#" ><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/id-freemov"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="file.js" type="text/javascript"></script>
+</body>
+</html>
